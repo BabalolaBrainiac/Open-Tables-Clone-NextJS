@@ -1,11 +1,14 @@
 import { Inter } from "@next/font/google";
+import styles from "./page.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
 	return (
-		<div>
-			<h1>NEXTJS Index Page</h1>
-		</div>
+		<main className={styles.main}>
+			<div>
+				<h1 className="text-blue-400">NEXTJS Index Page</h1>
+			</div>
+		</main>
 	);
 }
